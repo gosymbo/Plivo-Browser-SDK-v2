@@ -1190,6 +1190,7 @@ export const detectDeviceChange = function (): void {
  * Update the gain value for the current audio stream.
  */
 export const updateGain = function (gainValue: number): void {
+  console.log("updateGai in device", gainValue);
   if (currentLocalStream) {
     // Get a clone of the current stream
     const newStream = currentLocalStream.clone();
