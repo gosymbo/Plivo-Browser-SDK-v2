@@ -659,6 +659,7 @@ declare module "plivo-browser-sdk/client" {
     constructor(options: ConfiguationOptions);
     setExpiryTimeInEpoch: (timeInEpoch: number) => void;
     getTokenExpiryTimeInEpoch: () => number | null;
+    updateGain: (gain: number) => void;
   }
 }
 
