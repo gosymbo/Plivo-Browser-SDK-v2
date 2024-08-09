@@ -556,6 +556,7 @@ declare module "plivo-browser-sdk/client" {
      * Unmute the call(Outgoing/Incoming).
      */
     unmute: () => boolean;
+    updateGain: (gain: number) => void;
     /**
      * Configure the ringtone played when an incoming call starts ringing.
      * @param {Any} val - Can be media url or boolean value for enabling/disabling default ringtone
@@ -659,7 +660,6 @@ declare module "plivo-browser-sdk/client" {
     constructor(options: ConfiguationOptions);
     setExpiryTimeInEpoch: (timeInEpoch: number) => void;
     getTokenExpiryTimeInEpoch: () => number | null;
-    updateGain: (gain: number) => void;
   }
 }
 
